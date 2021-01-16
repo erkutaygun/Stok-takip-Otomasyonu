@@ -4,7 +4,7 @@
 
 [Sqlite indirme link](https://repo1.maven.org/maven2/org/xerial/sqlite-jdbc/3.34.0/)<br>
 [JavaFX indirme link](https://gluonhq.com/products/javafx/)<br>
-[JFonenix indirme link](https://github.com/jfoenixadmin/JFoenix)
+[JFoenix indirme link](https://github.com/jfoenixadmin/JFoenix)
 
 ## Java VM options
 ```
