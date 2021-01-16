@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaProje.controller.MusteriEkrani">
+   <children>
+      <TableView fx:id="tablo" layoutX="4.0" layoutY="77.0" prefHeight="200.0" prefWidth="590.0">
+        <columns>
+          <TableColumn prefWidth="83.0" text="Müşteri ID" ><cellValueFactory><PropertyValueFactory property="musteriID"></PropertyValueFactory> </cellValueFactory></TableColumn>
+          <TableColumn prefWidth="145.0" text="Müşteri Adı" ><cellValueFactory><PropertyValueFactory property="musteriAdi"></PropertyValueFactory></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="212.0" text="Müşteri Mail" ><cellValueFactory><PropertyValueFactory property="musteriMail"></PropertyValueFactory></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="149.0" text="Müşteri Şifre" ><cellValueFactory><PropertyValueFactory property="musteriSifre"></PropertyValueFactory></cellValueFactory></TableColumn>
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="search" focusColor="#eecdee" labelFloat="true" layoutX="147.0" layoutY="38.0" promptText="Search" />
+      <JFXButton onMouseClicked="#musteriekle" layoutX="35.0" layoutY="38.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Müşteri ekle" />
+      <JFXButton onMouseClicked="#musterisil" layoutX="300.0" layoutY="38.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Müşteri Sil" />
+      <JFXButton onMouseClicked="#musteriguncelle" layoutX="386.0" layoutY="38.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Müşteri Güncelle" />
+      <JFXButton onMouseClicked="#yenile" layoutX="514.0" layoutY="38.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Yenile" />
+      <JFXButton  fx:id="exit" onMouseClicked="#cikis" layoutX="490.0" layoutY="333.0" prefHeight="33.0" prefWidth="72.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Geri" />
+   </children>
+</AnchorPane>

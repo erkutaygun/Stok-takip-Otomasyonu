@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaProje.controller.UrunGuncelle">
+   <children>
+      <JFXTextField fx:id="urun_id" labelFloat="true" layoutX="80.0" layoutY="55.0" prefHeight="25.0" prefWidth="140.0" promptText="Ürün ID" />
+      <JFXTextField fx:id="urun_kod" labelFloat="true" layoutX="80.0" layoutY="95.0" prefHeight="25.0" prefWidth="140.0" promptText="Ürün Kodu" />
+      <JFXTextField fx:id="urun_ad" labelFloat="true" layoutX="80.0" layoutY="142.0" prefHeight="25.0" prefWidth="140.0" promptText="Ürün Adı" />
+      <JFXTextField fx:id="stok_adet" labelFloat="true" layoutX="80.0" layoutY="182.0" prefHeight="25.0" prefWidth="140.0" promptText="Stok Adet" />
+      <JFXTextField fx:id="depo_ad" labelFloat="true" layoutX="80.0" layoutY="225.0" prefHeight="25.0" prefWidth="140.0" promptText="Depo Adı" />
+      <JFXTextField fx:id="depo_yer" labelFloat="true" layoutX="80.0" layoutY="278.0" prefHeight="25.0" prefWidth="140.0" promptText="Depo Yerı" />
+      <JFXButton layoutX="104.0" layoutY="376.0" onMouseClicked="#guncelle" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Ürün Güncelle" />
+      <JFXButton fx:id="cikis" onMouseClicked="#exit" layoutX="220.0" layoutY="446.0" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Geri" />
+   </children>
+</AnchorPane>

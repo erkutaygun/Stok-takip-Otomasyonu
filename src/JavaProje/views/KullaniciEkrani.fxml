@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaProje.controller.KullaniciEkrani">
+   <children>
+      <TableView fx:id="tablo" layoutY="100.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="73.0" text="Kullanıcı ID">
+              <cellValueFactory><PropertyValueFactory property="kullaniciID" /> </cellValueFactory>
+          </TableColumn>
+          <TableColumn prefWidth="256.0" text="Kullanıcı Adı"><cellValueFactory><PropertyValueFactory property="kullaniciAdi" /></cellValueFactory></TableColumn>
+            <TableColumn prefWidth="270.0" text="Kullanıcı Mail"><cellValueFactory><PropertyValueFactory property="kullaniciMail" /></cellValueFactory></TableColumn>
+        </columns>
+      </TableView>
+      <JFXButton fx:id="Add" layoutX="54.0" layoutY="37.0" onMouseClicked="#Sign" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Kullanıcı Ekle" />
+      <JFXButton fx:id="Del" layoutX="258.0" layoutY="37.0" onMouseClicked="#Del" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Kullanıcı Sil" />
+      <JFXButton fx:id="exit" onMouseClicked="#cikis" layoutX="517.0" layoutY="336.0" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Geri" />
+      <JFXButton fx:id="Ref" layoutX="475.0" layoutY="38.0" onMouseClicked="#Reflesh" prefHeight="32.0" prefWidth="85.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Yenile" />
+   </children>
+</AnchorPane>

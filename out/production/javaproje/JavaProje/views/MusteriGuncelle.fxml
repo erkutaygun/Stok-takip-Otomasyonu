@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaProje.controller.MusteriGuncelle">
+   <children>
+      <JFXTextField fx:id="id" labelFloat="true" layoutX="83.0" layoutY="40.0" promptText="Müşteri ID" />
+      <JFXTextField fx:id="ad" labelFloat="true" layoutX="83.0" layoutY="100.0" promptText="Müşteri Adı" />
+      <JFXTextField fx:id="mail" labelFloat="true" layoutX="83.0" layoutY="160.0" promptText="Müşteri Mail" />
+      <JFXPasswordField fx:id="sifre" labelFloat="true" layoutX="83.0" layoutY="220.0" promptText="Müşteri Şifre" />
+      <JFXButton onMouseClicked="#guncelle" layoutX="125.0" layoutY="265.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Güncelle" />
+      <JFXButton fx:id="exit" onMouseClicked="#cikis" layoutX="218.0" layoutY="311.0" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Geri" />
+   </children>
+</AnchorPane>

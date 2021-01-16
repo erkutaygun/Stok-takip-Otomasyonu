@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaProje.controller.UrunEkle">
+   <children>
+      <JFXTextField fx:id="kod" labelFloat="true" layoutX="83.0" layoutY="30.0" promptText="Ürün Kodu" />
+      <JFXTextField fx:id="ad" labelFloat="true" layoutX="83.0" layoutY="80.0" promptText="Ürün Adı" />
+      <JFXTextField fx:id="adet" labelFloat="true" layoutX="83.0" layoutY="130.0" promptText="Stok Adet" />
+      <JFXTextField fx:id="depo_ad" labelFloat="true" layoutX="83.0" layoutY="180.0" promptText="Depo adı" />
+      <JFXTextField fx:id="yer" labelFloat="true" layoutX="83.0" layoutY="230.0" promptText="Depo yeri" />
+      <JFXButton onMouseClicked="#Urunekle" layoutX="111.0" layoutY="278.0" prefHeight="32.0" prefWidth="80.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Ürün Ekle" />
+      <JFXButton fx:id="exit" onMouseClicked="#cikis" layoutX="225.0" layoutY="348.0" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="geri" />
+   </children>
+</AnchorPane>

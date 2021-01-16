@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="290.0" prefWidth="360.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaProje.controller.DetayliBilgi">
+   <children>
+      <TableView fx:id="tablostok" prefHeight="227.0" prefWidth="120.0">
+        <columns>
+          <TableColumn prefWidth="120.0" text="Stok Adeti">
+              <cellValueFactory><PropertyValueFactory property="stokAdet" /> </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="tablodepo" layoutX="118.0" prefHeight="227.0" prefWidth="240.0">
+        <columns>
+          <TableColumn prefWidth="120.0" text="Depo Adı"><cellValueFactory><PropertyValueFactory property="depoAdi" /></cellValueFactory></TableColumn>
+          <TableColumn prefWidth="120.0" text="Depo Yeri"><cellValueFactory><PropertyValueFactory property="depoAdresi" /></cellValueFactory></TableColumn>
+        </columns>
+      </TableView>
+      <JFXButton fx:id="exit" layoutX="281.0" layoutY="242.0" onMouseClicked="#cikis" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Geri" />
+      <JFXButton onMouseClicked="#yenile" layoutX="180.0" layoutY="242.0" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="yenile" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaProje.controller.AnaSayfa">
+   <center>
+      <HBox prefHeight="343.0" prefWidth="343.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="TabloUrun" prefHeight="265.0" prefWidth="300.0">
+              <columns>
+                <TableColumn prefWidth="100.0" text="Ürün ID">
+                   <cellValueFactory><PropertyValueFactory property="urunID" /> </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="100.0" text="Ürün Kodu">
+                   <cellValueFactory><PropertyValueFactory property="urunKodu" /></cellValueFactory>
+                </TableColumn>
+                  <TableColumn prefWidth="100.0" text="Ürün Adı">
+                     <cellValueFactory><PropertyValueFactory property="urunAdi" /></cellValueFactory>
+                  </TableColumn>
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </center>
+   <right>
+      <Pane prefHeight="373.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton layoutX="10.0" layoutY="30.0" onMouseClicked="#urunEkle" prefHeight="32.0" prefWidth="100.0" style="-fx-background-radius: 20; -fx-background-color: #f5ecf4;" text="Ürün Ekle" />
+            <JFXButton layoutX="145.0" layoutY="30.0" onMouseClicked="#urunSil" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Ürün Sil" />
+            <JFXButton layoutX="10.0" layoutY="90.0" onMouseClicked="#urunGuncelle" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Güncelle" />
+            <JFXButton layoutX="145.0" layoutY="90.0" onMouseClicked="#yenile" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Yenile" />
+            <JFXButton layoutX="10.0" layoutY="150.0" onMouseClicked="#musteri" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Müşteri" />
+            <JFXButton fx:id="exit" layoutX="185.0" layoutY="278.0" onMouseClicked="#cikis" prefHeight="32.0" prefWidth="80.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Çıkış" />
+            <JFXButton layoutX="145.0" layoutY="150.0" onMouseClicked="#DetayliBilgi" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Detaylı Bilgi" />
+         </children>
+      </Pane>
+   </right>
+   <top>
+      <HBox prefHeight="57.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="search" labelFloat="true" layoutX="20.0" layoutY="20.0" promptText="Search">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </JFXTextField>
+            <JFXButton onMouseClicked="#kullaniciBilgi" prefHeight="32.0" prefWidth="118.0" style="-fx-background-color: #f5ecf4; -fx-background-radius: 20;" text="Kullanıcı Ekranı">
+               <HBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </HBox.margin>
+            </JFXButton>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

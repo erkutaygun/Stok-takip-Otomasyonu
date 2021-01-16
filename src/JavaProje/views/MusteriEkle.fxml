@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaProje.controller.MusteriEkle">
+   <children>
+      <JFXTextField fx:id="ad" labelFloat="true" layoutX="80.0" layoutY="40.0" promptText="Müşteri Adı" />
+      <JFXTextField fx:id="mail" labelFloat="true" layoutX="83.0" layoutY="100.0" promptText="Müşteri Mail" />
+      <JFXTextField fx:id="sifre" layoutX="83.0" layoutY="160.0" promptText="Müşteri Şİfre" />
+      <JFXButton onMouseClicked="#ekle" layoutX="119.0" layoutY="217.0" prefHeight="31.0" prefWidth="63.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Ekle" />
+      <JFXButton fx:id="exit" onMouseClicked="#cikis" layoutX="218.0" layoutY="242.0" prefHeight="25.0" prefWidth="52.0" style="-fx-background-color: #F5ECF4; -fx-background-radius: 20;" text="Geri" />
+   </children>
+</AnchorPane>
